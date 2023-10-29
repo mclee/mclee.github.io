@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-TW"
+ xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	
+	<title>另一個最佳化網站的工具 &#8211; Google Page Speed &#8211; George Lee's Blog</title>
+	
+	<link rel="dns-prefetch" href="//connect.facebook.net">
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+	<link rel='dns-prefetch' href='//live.staticflickr.com' />
+	<link rel='dns-prefetch' href='//secure.gravatar.com' />
+	
+	<link rel='dns-prefetch' href='//mclee.disqus.com' />
+	
+	<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+	<link rel="alternate" type="application/rss+xml" title="訂閱《George Lee's Blog》&raquo; 資訊提供" href="http://feeds.feedburner.com/mclee" />
+	<link rel='stylesheet' id='wp-block-library-css'  href='/assets/css/style.min.css' media='all' />
+	<link rel='stylesheet' id='wp-block-library-theme-css'  href='/assets/css/theme.min.css' media='all' />
+	<link rel='stylesheet' id='twentysixteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext&#038;display=fallback' media='all' />
+	<link rel='stylesheet' id='genericons-css'  href='/assets/css/genericons.css' media='all' />
+	<link rel='stylesheet' id='twentysixteen-style-css'  href='/assets/css/style.css' media='all' />
+	<link rel='stylesheet' id='twentysixteen-block-style-css'  href='/assets/css/blocks.css' media='all' />
+	<link rel='stylesheet' id='disqus_rcw-css'  href='/assets/css/disqus_rcw.css' media='all' />
+	<!--[if lt IE 10]>
+		<link rel='stylesheet' id='twentysixteen-ie-css'  href='/assets/css/ie.css' media='all' />
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<link rel='stylesheet' id='twentysixteen-ie8-css'  href='/assets/css/ie8.css' media='all' />
+	<![endif]-->
+	<!--[if lt IE 8]>
+		<link rel='stylesheet' id='twentysixteen-ie7-css'  href='/assets/css/ie7.css' media='all' />
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src='/assets/js/html5.js'></script>
+	<![endif]-->
+	<script src='/assets/js/jquery.js'></script>
+	<script src='/assets/js/jquery-migrate.min.js'></script>
+	<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>另一個最佳化網站的工具 – Google Page Speed | George Lee’s Blog</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="另一個最佳化網站的工具 – Google Page Speed" />
+<meta name="author" content="mclee" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="以前，唯一能拿來最佳化 (或者，優化) 網頁速度、網站設定的工具，就只有 YSlow。在 YSlow 出現以前，更只有 IBM 的 Page Detailer 可以用。正因為 IBM Page Detailer 不太 active，對於衡量網頁瀏覽速度又不夠理想，當初 Yahoo 才會開發 YSlow。" />
+<meta property="og:description" content="以前，唯一能拿來最佳化 (或者，優化) 網頁速度、網站設定的工具，就只有 YSlow。在 YSlow 出現以前，更只有 IBM 的 Page Detailer 可以用。正因為 IBM Page Detailer 不太 active，對於衡量網頁瀏覽速度又不夠理想，當初 Yahoo 才會開發 YSlow。" />
+<link rel="canonical" href="https://mclee.foolme.net/2009/06/google-page-speed.html" />
+<meta property="og:url" content="https://mclee.foolme.net/2009/06/google-page-speed.html" />
+<meta property="og:site_name" content="George Lee’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2009-06-04T19:55:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="另一個最佳化網站的工具 – Google Page Speed" />
+<meta property="fb:app_id" content="154324504589384" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mclee"},"dateModified":"2009-06-04T19:55:00+00:00","datePublished":"2009-06-04T19:55:00+00:00","description":"以前，唯一能拿來最佳化 (或者，優化) 網頁速度、網站設定的工具，就只有 YSlow。在 YSlow 出現以前，更只有 IBM 的 Page Detailer 可以用。正因為 IBM Page Detailer 不太 active，對於衡量網頁瀏覽速度又不夠理想，當初 Yahoo 才會開發 YSlow。","headline":"另一個最佳化網站的工具 – Google Page Speed","mainEntityOfPage":{"@type":"WebPage","@id":"https://mclee.foolme.net/2009/06/google-page-speed.html"},"url":"https://mclee.foolme.net/2009/06/google-page-speed.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body class="post-template-default single single-post postid-885 single-format-standard wp-embed-responsive">
+	<div id="page" class="site">
+		<div class="site-inner">
+			<a class="skip-link screen-reader-text" href="#content">跳至主要內容</a>
+			<header id="masthead" class="site-header" role="banner">
+				<div class="site-header-main">
+					<div class="site-branding">
+						<p class="site-title"><a href="/" rel="home">George Lee&#039;s Blog</a></p>
+						<p class="site-description">可以託六尺之孤，可以寄百里之命，臨大節而不可奪也。</p>
+					</div><!-- .site-branding -->
+					<button id="menu-toggle" class="menu-toggle">選單</button>
+					<div id="site-header-menu" class="site-header-menu">
+						<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="主要選單">
+							<div class="menu-main-menu-container">
+								<ul id="menu-main-menu" class="primary-menu">
+									<li id="menu-item-596" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-596"><a href="/">Blog</a></li>
+									<li id="menu-item-595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-595"><a href="https://www.flickr.com/photos/georgelee">相簿</a></li>
+									<li id="menu-item-618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-618"><a href="https://twitter.com/mclee">Twitter</a></li>
+								</ul>
+							</div>
+						</nav><!-- .main-navigation -->
+					</div><!-- .site-header-menu -->
+				</div><!-- .site-header-main -->
+				<div class="header-image">
+					<a href="/" rel="home">
+						<img src="/assets/img/cropped-1200x355-1.jpg" srcset="/assets/img/cropped-1200x355-1-300x70.jpg 300w, /assets/img/cropped-1200x355-1-1024x239.jpg 1024w, /assets/img/cropped-1200x355-1-768x179.jpg 768w, /assets/img/cropped-1200x355-1.jpg 1200w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px" width="1200" height="280" alt="George Lee&#039;s Blog">
+					</a>
+				</div><!-- .header-image -->
+			</header><!-- .site-header -->
+			<div id="content" class="site-content">
+				<div id="primary" class="content-area">
+					<main id="main" class="site-main" role="main">
+						<article class="post type-post status-publish format-standard hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">另一個最佳化網站的工具 &#8211; Google Page Speed</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<div class="fb-social-plugin fb-like" data-font="arial" data-ref="above-post" data-href="https://mclee.foolme.net/2009/06/google-page-speed.html" data-show-faces="true" data-width="300"></div>
+		<p>以前，唯一能拿來最佳化 (或者，優化) 網頁速度、網站設定的工具，就只有 <a href="http://developer.yahoo.com/yslow/">YSlow</a>。在 YSlow 出現以前，更只有 IBM 的 <a href="http://www.alphaworks.ibm.com/tech/pagedetailer">Page Detailer</a> 可以用。正因為 IBM Page Detailer 不太 active，對於衡量網頁瀏覽速度又不夠理想，當初 Yahoo 才會開發 YSlow。</p>
+
+<p>YSlow問世以後，加上 Yahoo 研究並公佈的一些<a href="http://developer.yahoo.com/performance/">網站製作最佳化準則</a>，外界才有可以依循的標準，也才有量化指標可以衡量一個網頁的速度。YSlow 被公佈之後，整個網路世界都不一樣了。尤其是對前端製作的 web developer 更是如此。</p>
+
+<p>不過YSlow 作者 <a href="http://stevesouders.com/bio.html">Steve Souders</a> 在 2008 年被 Google 挖角了。跳槽以後， 大家都等著在瞧兩件事情：</p>
+
+<ol>
+  <li>YSlow 會不會維持以往的 active？</li>
+  <li>Steve Souders 進 Google 以後，會不會繼續做類似的產品？</li>
+</ol>
+
+<p>顯然兩個答案都是 yes。YSlow 仍然持續在演進，而很多人都注意到，Google 現在也<a href="http://google-code-updates.blogspot.com/2009/06/introducing-page-speed.html">公佈</a>了他們類似 YSlow 的新工具：<a href="http://code.google.com/intl/zh-TW/speed/page-speed/">Google Page Speed</a>。</p>
+
+<p>乍看之下，Google Page Speed 和 YSlow 實在是很像的東西。都一樣是 firebug 的 plugin，甚至連介面都和前一版的 YSlow 非常雷同。而 Google Page Speed 的<a href="http://code.google.com/intl/zh-TW/speed/page-speed/docs/rules_intro.html">最佳化規範</a>，雖然撰寫格式和 YSlow 準則不一樣，但是如果你仔細看，其實背後的精神和理論基礎都是一致的。</p>
+
+<p>不過，即使是很類似的工具，還是有若干不同之處。新推出的 Google Page Speed 也有勝出的地方，例如：</p>
+
+<ol>
+  <li>Page Speed 比 YSlow 檢查的更嚴格，項目更多更挑剔</li>
+  <li>Page Speed 針對 CSS 的各種 performance issue 跑的更仔細，而且會直接列出可以修正的地方</li>
+  <li>雖然 YSlow 也有提供 SmushIt 來 optimize 圖片檔，但是還是背後傳到 server 上再讓你下載。相比之下， Page Speed 直接在 plugin 內就把 optimize 過的圖片給你，用起來比較方便。</li>
+  <li>有趣的是，若干 YUI CSS 的內容被 Google Page Speed 拿出來挑毛病了 XDDD</li>
+  <li>不過，YSlow 的介面還是比較好看 XDDD</li>
+</ol>
+
+<p>當然，Google Page Speed 不可能是為了「不甘寂寞」而做出來打 YSlow 的工具，很顯然是他們需要比 YSlow 更多的項目來自動化檢驗網頁內容，就如同當年 Yahoo 不使用 IBM Page Detailer 一樣。</p>
+
+<p>不過，我比較好奇的是，等到 <a href="http://www.google.com/chrome">chrome</a> 的 extension 機制成熟以後，Google Page Speed 是否會移植到 chrome 上？還是會 chrome 跟 firefox 雙棲？ 這想必是 Steve Souders之後要頗費神的事情了。</p>
+
+
+		<div class="fb-social-plugin fb-like" data-font="arial" data-ref="below-post" data-href="https://mclee.foolme.net/2009/06/google-page-speed.html" data-show-faces="true" data-width="300"></div>
+		<!-- Facebook Comments Plugin for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ -->
+
+		<h3>留言</h3>
+		<div class="fb-comments" data-href="https://mclee.foolme.net/2009/06/google-page-speed.html" data-numposts="5" data-width="100%" data-colorscheme="light"></div>
+		<div id="disqus_thread"></div>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline">
+			<span class="author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/c6940ed039d698566cc8b17b641078f1?s=49&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c6940ed039d698566cc8b17b641078f1?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' />
+				<span class="screen-reader-text">作者 </span>
+				mclee
+			</span>
+		</span>
+		<span class="posted-on">
+			<span class="screen-reader-text">發佈日期: </span>
+			<a href="/2009/06/google-page-speed.html" rel="bookmark">
+				<time class="entry-date published" datetime="2009-06-04 19:55:00 +0000">2009/06/04</time>
+			</a>
+		</span>
+		<span class="cat-links">
+			<span class="screen-reader-text">分類 </span>
+			
+			<a href="/category/firefox" rel="category tag">firefox</a>
+				
+				、
+				
+			
+			<a href="/category/google" rel="category tag">google</a>
+				
+				、
+				
+			
+			<a href="/category/internet" rel="category tag">internet</a>
+				
+				、
+				
+			
+			<a href="/category/performance" rel="category tag">performance</a>
+				
+				、
+				
+			
+			<a href="/category/yahoo" rel="category tag">yahoo</a>
+				
+			
+		</span>
+	</footer><!-- .entry-footer -->
+
+	<nav class="navigation post-navigation" role="navigation" aria-label="文章">
+		<h2 class="screen-reader-text">文章導覽</h2>
+		<div class="nav-links">
+			
+			<div class="nav-previous">
+				<a href="/2009/06/blog-template.html" rel="prev">
+					<span class="meta-nav" aria-hidden="true">上一篇文章</span>
+					<span class="screen-reader-text">上一篇文章:</span>
+					<span class="post-title">幫 blog 換個 template&#8230;</span>
+				</a>
+			</div>
+			
+			
+			<div class="nav-next">
+				<a href="/2009/07/oecd-factbook-explorer.html" rel="next">
+					<span class="meta-nav" aria-hidden="true">下一篇文章</span>
+					<span class="screen-reader-text">下一篇文章:</span>
+					<span class="post-title">很酷的 OECD Factbook eXplorer</span>
+				</a>
+			</div>
+			
+		</div>
+	</nav>
+</article>
+
+					</main>
+				</div>
+				<aside id="secondary" class="sidebar widget-area" role="complementary">
+					<section id="search-2" class="widget widget_search">
+						<form role="search" method="get" class="search-form" action="https://www.google.com/search" target="_blank">
+							<input type="hidden" name="sitesearch" value="mclee.foolme.net" />
+							<label>
+								<span class="screen-reader-text">搜尋關鍵字:</span>
+								<input type="search" class="search-field" placeholder="搜尋..." value="" name="q" />
+							</label>
+							<button type="submit" class="search-submit"><span class="screen-reader-text">搜尋</span></button>
+						</form>
+					</section>
+					<section id="recent-posts-2" class="widget widget_recent_entries">
+						<h2 class="widget-title">近期文章</h2>
+						<ul>
+							
+							<li>
+								<a href="/2023/10/以色列能「肅清哈瑪斯」嗎？.html" aria-current="page">以色列能「肅清哈瑪斯」嗎？</a>
+							</li>
+							
+							<li>
+								<a href="/2023/10/哈瑪斯屠殺嬰兒 - 從伊拉克談起.html" aria-current="page">哈瑪斯屠殺嬰兒 - 從伊拉克談起</a>
+							</li>
+							
+							<li>
+								<a href="2023/05/美日兩國戰爭下的菲律賓.html" aria-current="page">美日兩國戰爭下的菲律賓</a>
+							</li>
+							
+							<li>
+								<a href="/2023/01/一百卅年的光陰，且從故事看今朝.html" aria-current="page">一百卅年的光陰，且從故事看今朝</a>
+							</li>
+							
+							<li>
+								<a href="/2021/12/2022前夕.html" aria-current="page">2022 前夕</a>
+							</li>
+							
+						</ul>
+					</section>
+					
+					<section id="disqus_recent" class="widget widget_disqus_recent_comments">
+						<aside id="disqus_rcw_title" class=""><h2 class="widget-title">Recent Comments</h2>
+							<script type="text/javascript" src="https://mclee.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=40&excerpt_length=200"></script>
+						</aside>
+					</section>
+					
+				</aside><!-- .sidebar .widget-area -->
+			</div><!-- .site-content -->
+			
+			<footer id="colophon" class="site-footer" role="contentinfo">
+				<nav class="main-navigation" role="navigation" aria-label="頁尾主要選單">
+					<div class="menu-%e9%a6%96%e9%a0%81%e6%a8%99%e7%b1%a4-container"><ul id="menu-%e9%a6%96%e9%a0%81%e6%a8%99%e7%b1%a4-1" class="primary-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-596"><a href="https://mclee.foolme.net">Blog</a></li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-595"><a href="http://www.flickr.com/photos/georgelee">相簿</a></li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-618"><a href="http://twitter.com/mclee">Twitter</a></li>
+						</ul>
+					</div>
+				</nav><!-- .main-navigation -->
+						
+						
+				<div class="site-info">
+					<span class="site-title"><a href="https://mclee.foolme.net/" rel="home">George Lee&#039;s Blog</a></span>
+					<a href="https://wordpress.org/themes/twentysixteen/" class="imprint">
+						TwentySixteen theme
+					</a>
+				</div><!-- .site-info -->
+			</footer><!-- .site-footer -->
+		</div><!-- .site-inner -->
+	</div><!-- .site -->
+	
+	
+	<script>
+		var countVars = {"disqusShortname":"mclee"};
+		var disqus_config = function () {
+			this.page.url = "https://mclee.foolme.net/2009/06/google-page-speed.html";  
+			this.page.identifier = "/2009/06/google-page-speed"; 
+		};
+		(function() {
+			var d = document, s = d.createElement('script');
+			s.src = 'https://mclee.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	
+	<script>
+		var screenReaderText = {"expand":"\u5c55\u958b\u5b50\u9078\u55ae","collapse":"\u6536\u5408\u5b50\u9078\u55ae"};
+	</script>
+	<script src='/assets/js/functions.js'></script>
+	
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=154324504589384&version=v2.3";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	
+
+	
+	<!-- Google Analytics -->
+	<script>
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-262652-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- End Google Analytics -->
+	
+</html>
